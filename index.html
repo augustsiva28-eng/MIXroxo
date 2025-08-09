@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>mixRoxo - Streetwear Profissional</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">mixRoxo</div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><button class="category-btn active" data-category="Todos">Todos</button></li>
+          <li><button class="category-btn" data-category="Tênis">Tênis</button></li>
+          <li><button class="category-btn" data-category="Camisetas">Camisetas</button></li>
+          <li><button class="category-btn" data-category="Moletom">Moletom</button></li>
+          <li><button class="category-btn" data-category="Calças Baggy">Calças Baggy</button></li>
+          <li><button class="category-btn" data-category="Cargos">Cargos</button></li>
+          <li><button class="category-btn" data-category="Acessórios">Acessórios</button></li>
+        </ul>
+      </nav>
+      <div class="search-cart">
+        <input type="text" id="search" placeholder="Buscar produtos..." aria-label="Buscar produtos" />
+        <button id="cart-btn" aria-label="Abrir carrinho">🛒<span id="cart-count">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="products" class="products-grid" aria-live="polite" aria-relevant="additions removals">
+      <!-- Produtos gerados via JS -->
+    </section>
+  </main>
+
+  <aside id="cart-modal" class="cart hidden" aria-label="Carrinho de compras" role="dialog" aria-modal="true">
+    <header class="cart-header">
+      <h2>Seu Carrinho</h2>
+      <button id="close-cart" aria-label="Fechar carrinho">&times;</button>
+    </header>
+    <div id="cart-items" class="cart-items" tabindex="0">
+      <!-- Itens do carrinho -->
+    </div>
+    <footer class="cart-footer">
+      <div>Total: <span id="cart-total">R$ 0,00</span></div>
+      <button id="checkout-btn" class="btn-primary">Finalizar compra</button>
+    </footer>
+  </aside>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 mixRoxo - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
